@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternos - Cavalheiro</title>
+    <meta name="description" content="Coleção exclusiva de ternos masculinos premium. Ternos slim, tradicionais e italiano.">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%94%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Cavalheiro</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="ternos.html" class="active">Ternos</a></li>
+                    <li><a href="social.html">Social</a></li>
+                    <li><a href="esporte.html">Casual</a></li>
+                    <li><a href="calcados.html">Calçados</a></li>
+                    <li><a href="abotoaduras.html">Abotoaduras</a></li>
+                    <li><a href="relogios.html">Relógios</a></li>
+                    <li><a href="acessorios.html">Acessórios</a>
+                    <li><a href="avaliacoes.html">Avaliações</a></li>
+                    <li><a href="utilidades.html">Utilidades</a></li></li>
+                    <li id="nav-account"><a href="login.html">Entrar</a></li>
+                    <li class="nav-carrinho">
+                        <a href="javascript:void(0)" onclick="abrirCarrinho()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Carrinho
+                            <span class="carrinho-badge" id="carrinho-contador" style="display: none;">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="product-category">
+            <h2 class="category-title">Ternos</h2>
+            
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow carousel-arrow-left" onclick="scrollCarousel('ternos', -1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                
+                <div class="product-carousel" id="carousel-ternos">
+
+                    <div class="product-card">
+                        <img src="foto/Terno Navy Slim.webp" alt="Terno Azul">
+                        <div class="product-info">
+                            <h3>Terno Preto Vivo</h3>
+
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.250,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Navy Slim.webp" alt="Terno Azul">
+                        <div class="product-info">
+                            <h3>Terno</h3>
+
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.250,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Navy Slim.webp" alt="Terno Azul">
+                        <div class="product-info">
+                            <h3>Terno Preto Vivo</h3>
+
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.250,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Navy Slim.webp" alt="Terno Azul">
+                        <div class="product-info">
+                            <h3>Terno Preto Vivo</h3>
+
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.250,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Navy Slim.webp" alt="Terno Azul">
+                        <div class="product-info">
+                            <h3>Terno Preto Vivo</h3>
+
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.250,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Navy Slim.webp" alt="Terno Azul">
+                        <div class="product-info">
+                            <h3>Terno</h3>
+
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.250,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/1037548cfce2999a9c3c6c34d785c3a7.jpg" alt="Terno Preto">
+                        <div class="product-info">
+                            <h3>Terno Preto Envelhecido</h3>
+                            <p>Tamanho: 46, 48, 50</p>
+                            <p class="price">R$ 1.180,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/4f2bcd52ad2c2b56953a4a053182167c.jpg" alt="Terno Cinza">
+                        <div class="product-info">
+                            <h3>Terno Slim Branco</h3>
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.150,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/da85ecc20d870563fc83eba506cd790b.jpg" alt="Terno Azul">
+                        <div class="product-info">
+                            <h3>Terno Azul Vivo</h3>
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.200,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Grafite.jpg" alt="Terno Grafite">
+                        <div class="product-info">
+                            <h3>Terno Grafite</h3>
+                            <p>Tamanho: 46, 48, 50, 52</p>
+                            <p class="price">R$ 1.280,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Navy Slim.webp" alt="Terno Navy">
+                        <div class="product-info">
+                            <h3>Terno Navy Slim</h3>
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.320,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Casamento.webp" alt="Terno Casamento">
+                        <div class="product-info">
+                            <h3>Terno Casamento</h3>
+                            <p>Tamanho: 46 ao 54</p>
+                            <p class="price">R$ 1.450,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Premium Italian.jpg" alt="Terno Premium">
+                        <div class="product-info">
+                            <h3>Terno Premium Italian</h3>
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.850,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <button class="carousel-arrow carousel-arrow-right" onclick="scrollCarousel('ternos', 1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+
+            <!-- Segunda fileira -->
+            <div class="carousel-wrapper">
+                <button class="carousel-arrow carousel-arrow-left" onclick="scrollCarousel('ternos2', -1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                
+                <div class="product-carousel" id="carousel-ternos2">
+                    <div class="product-card">
+                        <img src="foto/Terno Premium Italian.jpg" alt="Terno Italian">
+                        <div class="product-info">
+                            <h3>Terno Italian Super Premium</h3>
+                            <p>Tamanho: 46, 48, 50</p>
+                            <p class="price">R$ 2.200,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Casamento.webp" alt="Terno Casamento">
+                        <div class="product-info">
+                            <h3>Terno Noivo Especial</h3>
+                            <p>Tamanho: 48 ao 54</p>
+                            <p class="price">R$ 1.680,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Grafite.jpg" alt="Terno Grafite">
+                        <div class="product-info">
+                            <h3>Terno Grafite Slim</h3>
+                            <p>Tamanho: 46, 48, 52</p>
+                            <p class="price">R$ 1.380,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Navy Slim.webp" alt="Terno Navy">
+                        <div class="product-info">
+                            <h3>Terno Navy Tradicional</h3>
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.420,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/1037548cfce2999a9c3c6c34d785c3a7.jpg" alt="Terno Escuro">
+                        <div class="product-info">
+                            <h3>Terno Escuro Sob Medida</h3>
+                            <p>Tamanho: 50, 52, 54</p>
+                            <p class="price">R$ 1.950,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="img/4f2bcd52ad2c2b56953a4a053182167c.jpg" alt="Terno Claro">
+                        <div class="product-info">
+                            <h3>Terno Claro Premium</h3>
+                            <p>Tamanho: 48, 50</p>
+                            <p class="price">R$ 1.480,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Casamento.webp" alt="Terno Festa">
+                        <div class="product-info">
+                            <h3>Terno Festa Black Tie</h3>
+                            <p>Tamanho: 46 ao 52</p>
+                            <p class="price">R$ 1.750,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="foto/Terno Grafite.jpg" alt="Terno Moderno">
+                        <div class="product-info">
+                            <h3>Terno Moderno Grafite</h3>
+                            <p>Tamanho: 48, 50, 52</p>
+                            <p class="price">R$ 1.580,00</p>
+                            <button class="buy-btn">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-arrow carousel-arrow-right" onclick="scrollCarousel('ternos2', 1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="brand">Cavalheiro</p>
+            <p>&copy; 2026 Cavalheiro - Todos os direitos reservados.</p>
+            <p style="margin-top: 15px; font-size: 0.85rem; letter-spacing: 2px;">ESTAMPARIA & CONFECÇÕES</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script>
+        // Dynamic nav account
+        function updateNavAccount() {
+            const loggedIn = localStorage.getItem('userLoggedIn') === 'true';
+            const accountLi = document.getElementById('nav-account');
+            if (accountLi) {
+                if (loggedIn) {
+                    accountLi.innerHTML = '<a href="conta.html">Conta</a>';
+                } else {
+                    accountLi.innerHTML = '<a href="login.html">Entrar</a>';
+                }
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', updateNavAccount);
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+    </script>
+
+    <div class="modal-detalhes" id="modal-detalhes">
+        <div class="modal-detalhes-content">
+            <button class="modal-fechar" onclick="fecharModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-corpo">
+                <div class="modal-imagem">
+                    <img id="modal-img" src="" alt="Produto">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-nome">Nome do Produto</h2>
+                    <p class="modal-descricao" id="modal-desc">Descrição do produto...</p>
+                    <p class="modal-preco" id="modal-preco">R$ 0,00</p>
+                    <div class="modal-selecao" id="modal-tamanho" style="display: none;">
+                        <label for="tamanho">Tamanho</label>
+                        <select id="tamanho">
+                            <option value="">Selecione o tamanho</option>
+                            <option value="46">46</option>
+                            <option value="48">48</option>
+                            <option value="50">50</option>
+                            <option value="52">52</option>
+                            <option value="54">54</option>
+                        </select>
+                    </div>
+                    <button class="modal-btn-adicionar" id="modal-btn-adicionar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+        </div>
+
+    <div class="carrinho-overlay" id="carrinho-overlay" onclick="fecharCarrinho()"></div>
+    <div class="carrinho-sidebar" id="carrinho-sidebar">
+        <div class="carrinho-header">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                Meu Carrinho
+            </h2>
+            <button class="carrinho-fechar" onclick="fecharCarrinho()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="carrinho-itens" id="carrinho-itens"></div>
+        <div class="carrinho-footer">
+            <div id="carrinho-total"></div>
+            <button class="carrinho-btn-finalizar" onclick="finalizarCompra()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+                Finalizar Compra
+            </button>
+        </div>
+
+    <script src="js/carrinho.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>

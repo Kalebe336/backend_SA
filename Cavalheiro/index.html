@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cavalheiro - Moda Masculina Premium</title>
+    <meta name="description" content="Cavalheiro - Moda masculina premium. Ternos, camisas sociais, acessórios e calçados masculinos de alta qualidade.">
+<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%94%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Cavalheiro</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="ternos.html">Ternos</a></li>
+                    <li><a href="social.html">Social</a></li>
+                    <li><a href="esporte.html">Casual</a></li>
+                    <li><a href="calcados.html">Calçados</a></li>
+                    <li><a href="abotoaduras.html">Abotoaduras</a></li>
+                    <li><a href="relogios.html">Relógios</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                    <li><a href="avaliacoes.html">Avaliações</a></li>
+                    <li><a href="utilidades.html">Utilidades</a></li>
+                    <li id="nav-account"><a href="login.html">Entrar</a></li>
+                    <li class="nav-carrinho">
+                        <a href="javascript:void(0)" onclick="abrirCarrinho()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            Carrinho
+                            <span class="carrinho-badge" id="carrinho-contador" style="display: none;">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-ornament">✦</div>
+            <h2 class="hero-subtitle">Bem-vindo à Cavalheiro</h2>
+            <h1 class="hero-title">
+                <span class="title-line">Elegancia</span>
+                <span class="title-line title-gold">Masculina</span>
+            </h1>
+            <p class="hero-text">Descubra nossa coleção exclusiva de moda masculina premium. Qualidade, estilo e sofisticação em cada detalhe.</p>
+            <a href="login.html" class="hero-btn">Entrar</a>
+        </div>
+    </section>
+
+    <!-- Elegant Presentation Section -->
+    <section class="presentation-section">
+        <div class="presentation-container">
+            <div class="presentation-header">
+                <div class="presentation-ornament">◆</div>
+                <h2 class="presentation-title">A Cavalheiro</h2>
+                <div class="presentation-ornament">◆</div>
+            </div>
+            
+            <div class="presentation-content">
+                <p class="presentation-text">
+                    Desde sua fundação, a <strong>Cavalheiro</strong> representa o que há de mais refinado na moda masculina brasileira. 
+                    Nossa trajetória é construída sobre pilares sólidos de <em>qualidade excepcional</em>, <em>elegância atemporal</em> e 
+                    <em>atendimento personalizado</em>.
+                </p>
+                <p class="presentation-text">
+                    Cada peça em nossa coleção é cuidadosamente selecionada para garantir que nossos clientes encontrem não apenas 
+                    roupas, mas verdadeiras expressões de estilo e personalidade. Dos ternos Sob Medida às camisas sociais, dos 
+                    acessórios refinados aos calçados artesanais — missão é transformar o homem moderno em uma versão ainda mais 
+                    sofisticada de si mesmo.
+                </p>
+                <p class="presentation-text">
+                    Acreditamos que a verdadeira elegância está nos detalhes. Por isso, dedicamos atenção especial a cada elemento 
+                    de nossas peças, desde a escolha dos tecidos até os acabamentos finais. Nosso compromisso com a excelência 
+                    vai além da moda — é uma filosofia de vida.
+                </p>
+            </div>
+            
+            <div class="presentation-features">
+                <div class="feature-item">
+                    <span class="feature-icon">♞</span>
+                    <h3>Qualidade Premium</h3>
+                    <p>Materiais selecionados e acabamento impecável</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">♞</span>
+                    <h3>Estilo Atemporal</h3>
+                    <p>Peças que transcendem tendências passageiras</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">♞</span>
+                    <h3>Atendimento Exclusivo</h3>
+                    <p>Consultoria personalizada para cada cliente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section - Estilo Sofisticado -->
+    <main class="container">
+        <section class="collections-section">
+            <div class="collections-header">
+                <div class="collections-line"></div>
+                <h2 class="collections-title">Nossas Coleções</h2>
+                <div class="collections-line"></div>
+            </div>
+            <p class="collections-subtitle">Sofisticação e elegância em cada peça</p>
+            
+            <div class="collections-grid">
+                <a href="ternos.html" class="collection-item collection-featured">
+                    <div class="collection-image">
+                        <img src="img/ternos.jpg" alt="Ternos">
+                    </div>
+                    <div class="collection-overlay">
+                        <span class="collection-icon">♞</span>
+                        <h3>Ternos</h3>
+                        <p>Coleção Premium</p>
+                    </div>
+                </a>
+                
+                <a href="social.html" class="collection-item">
+                    <div class="collection-image">
+                        <img src="img/social.jpg" alt="Social">
+                    </div>
+                    <div class="collection-overlay">
+                        <span class="collection-icon">♞</span>
+                        <h3>Social</h3>
+                    </div>
+                </a>
+                
+                <a href="calcados.html" class="collection-item">
+                    <div class="collection-image">
+                        <img src="img/sapato preto.jpg" alt="Calçados">
+                    </div>
+                    <div class="collection-overlay">
+                        <span class="collection-icon">♞</span>
+                        <h3>Calçados</h3>
+                    </div>
+                </a>
+                
+                <a href="abotoaduras.html" class="collection-item">
+                    <div class="collection-image">
+                        <img src="img/abotoaduras dourado.jpg" alt="Abotoaduras">
+                    </div>
+                    <div class="collection-overlay">
+                        <span class="collection-icon">♞</span>
+                        <h3>Abotoaduras</h3>
+                    </div>
+                </a>
+                
+                <a href="relogios.html" class="collection-item">
+                    <div class="collection-image">
+                        <img src="img/relogio.jpg" alt="Relógios">
+                    </div>
+                    <div class="collection-overlay">
+                        <span class="collection-icon">♞</span>
+                        <h3>Relógios</h3>
+                    </div>
+                </a>
+                
+                <a href="acessorios.html" class="collection-item">
+                    <div class="collection-image">
+                        <img src="img/acessorios.jpg" alt="Acessórios">
+                    </div>
+                    <div class="collection-overlay">
+                        <span class="collection-icon">♞</span>
+                        <h3>Acessórios</h3>
+                    </div>
+                </a>
+                
+                <a href="esporte.html" class="collection-item">
+                    <div class="collection-image">
+                        <img src="img/esportiva.jpg" alt="Casual">
+                    </div>
+                    <div class="collection-overlay">
+                        <span class="collection-icon">♞</span>
+                        <h3>Casual</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="brand">Cavalheiro</p>
+            <p>&copy; 2026 Cavalheiro - Todos os direitos reservados.</p>
+            <p style="margin-top: 15px; font-size: 0.85rem; letter-spacing: 2px;">ESTAMPARIA & CONFECÇÕES</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script>
+        // Dynamic nav account
+        function updateNavAccount() {
+            const loggedIn = localStorage.getItem('userLoggedIn') === 'true';
+            const accountLi = document.getElementById('nav-account');
+            if (accountLi) {
+                if (loggedIn) {
+                    accountLi.innerHTML = '<a href="conta.html">Conta</a>';
+                } else {
+                    accountLi.innerHTML = '<a href="login.html">Entrar</a>';
+                }
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', updateNavAccount);
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = document.querySelector('.scroll-top');
+            if (window.pageYOffset > 300) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+    </script>
+
+    <!-- Modal de Detalhes do Produto -->
+    <div class="modal-detalhes" id="modal-detalhes">
+        <div class="modal-detalhes-content">
+            <button class="modal-fechar" onclick="fecharModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-corpo">
+                <div class="modal-imagem">
+                    <img id="modal-img" src="" alt="Produto">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-nome">Nome do Produto</h2>
+                    <p class="modal-descricao" id="modal-desc">Descrição do produto...</p>
+                    <p class="modal-preco" id="modal-preco">R$ 0,00</p>
+                    <div class="modal-selecao" id="modal-tamanho" style="display: none;">
+                        <label for="tamanho">Tamanho</label>
+                        <select id="tamanho">
+                            <option value="">Selecione o tamanho</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                            <option value="GG">GG</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="48">48</option>
+                            <option value="50">50</option>
+                            <option value="52">52</option>
+                        </select>
+                    </div>
+                    <button class="modal-btn-adicionar" id="modal-btn-adicionar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        Adicionar ao Carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar do Carrinho -->
+    <div class="carrinho-overlay" id="carrinho-overlay" onclick="fecharCarrinho()"></div>
+    <div class="carrinho-sidebar" id="carrinho-sidebar">
+        <div class="carrinho-header">
+            <h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                Meu Carrinho
+            </h2>
+            <button class="carrinho-fechar" onclick="fecharCarrinho()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="carrinho-itens" id="carrinho-itens">
+            <!-- Itens do carrinho serão inseridos via JavaScript -->
+        </div>
+        <div class="carrinho-footer">
+            <div id="carrinho-total">
+                <!-- Total será inserido via JavaScript -->
+            </div>
+            <button class="carrinho-btn-finalizar" onclick="finalizarCompra()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+                Finalizar Compra
+            </button>
+        </div>
+    </div>
+
+    <script src="js/carrinho.js"></script>
+</body>
+</html>
