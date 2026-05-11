@@ -269,31 +269,12 @@
             const loggedIn = localStorage.getItem('userLoggedIn') === 'true';
             const accountLi = document.getElementById('nav-account');
             if (accountLi) {
-                if (loggedIn) {
-                    accountLi.innerHTML = '<a href="conta.html">Conta</a>';
-                } else {
-                    accountLi.innerHTML = '<a href="login.html">Entrar</a>';
-                }
+                accountLi.innerHTML = loggedIn ? '<a href="conta.html">Conta</a>' : '<a href="login.html">Entrar</a>';
             }
         }
-        
+
         document.addEventListener('DOMContentLoaded', updateNavAccount);
-        
-        // Dynamic nav account
-        function updateNavAccount() {
-            const loggedIn = localStorage.getItem('userLoggedIn') === 'true';
-            const accountLi = document.getElementById('nav-account');
-            if (accountLi) {
-                if (loggedIn) {
-                    accountLi.innerHTML = '<a href="conta.html">Conta</a>';
-                } else {
-                    accountLi.innerHTML = '<a href="login.html">Entrar</a>';
-                }
-            }
-        }
-        
-        document.addEventListener('DOMContentLoaded', updateNavAccount);
-        
+
         window.addEventListener('scroll', function() {
             const scrollTop = document.querySelector('.scroll-top');
             if (window.pageYOffset > 300) {
@@ -303,6 +284,7 @@
             }
         });
     </script>
+
 
     <div class="modal-detalhes" id="modal-detalhes">
         <div class="modal-detalhes-content">
@@ -376,5 +358,6 @@
 
     <script src="js/carrinho.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>
