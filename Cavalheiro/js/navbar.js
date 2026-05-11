@@ -1,14 +1,13 @@
 (function () {
   function getNavLinks() {
-    // Pega apenas links do menu principal: header > nav > ul > li > a
+    // Busca apenas os links do menu principal no header.
+    // Estrutura atual: header > nav > ul > li > a
     return document.querySelectorAll('header nav ul li a');
   }
 
   function normalizePath(p) {
     if (!p) return '';
-    // remove query/hash
     const clean = String(p).split('#')[0].split('?')[0];
-    // pega só o nome do arquivo
     const parts = clean.split('/');
     return parts[parts.length - 1] || '';
   }
@@ -18,26 +17,43 @@
     const links = getNavLinks();
 
     links.forEach((a) => {
-      // remove active do anchor e do li (dependendo de como está no HTML)
       a.classList.remove('active');
       if (a.parentElement) a.parentElement.classList.remove('active');
     });
 
-    // se o menu tiver links com href="termos.html" (relativo), comparamos pelo arquivo
     links.forEach((a) => {
       const href = normalizePath(a.getAttribute('href'));
       if (!href) return;
 
-      // Considera index.html como "" também (às vezes pathname pode vir vazio em alguns casos)
       const isMatch = href === currentFile || (href === 'index.html' && (currentFile === '' || currentFile === 'index.html'));
+      if (!isMatch) return;
 
-      if (isMatch) {
-        a.classList.add('active');
-        if (a.parentElement) a.parentElement.classList.add('active');
-      }
+      a.classList.add('active');
+      if (a.parentElement) a.parentElement.classList.add('active');
     });
   }
 
-  document.addEventListener('DOMContentLoaded', setActiveNavLink);
+  async function updateNavAccountFromBackend() {
+    const accountLi = document.getElementById('nav-account');
+    if (!accountLi) return;
+
+    try {
+      const resp = await fetch('/auth/me', { method: 'GET', credentials: 'include' });
+      if (!resp.ok) throw new Error('auth/me failed');
+
+      const data = await resp.json();
+      const loggedIn = !!data.loggedIn;
+      accountLi.innerHTML = loggedIn ? '<a href="conta.html">Conta</a>' : '<a href="login.html">Entrar</a>';
+    } catch (e) {
+      // fallback: sem backend rodando, não quebra a tela
+      const loggedIn = localStorage.getItem('userLoggedIn') === 'true';
+      accountLi.innerHTML = loggedIn ? '<a href="conta.html">Conta</a>' : '<a href="login.html">Entrar</a>';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setActiveNavLink();
+    updateNavAccountFromBackend();
+  });
 })();
 
